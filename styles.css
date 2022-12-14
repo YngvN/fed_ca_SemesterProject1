@@ -127,6 +127,7 @@ footer{
     margin-right: auto;
     padding-left: 0;
     max-width: 1800px;
+    font-size: 1.3em;
 }
 .ex_nav ul{
     flex-direction: row;
@@ -142,7 +143,7 @@ footer{
 }
 .page_title{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 300px;
 }
 .page_title_text{
@@ -164,7 +165,6 @@ footer{
 }
 .img_bg_evolution{
     filter: invert(100%);
-    padding-left: 10px;
 }
 .ex_main{
     display: flex;
@@ -356,7 +356,7 @@ footer{
     }
     .ex_nav{
         flex-flow: wrap;
-        font-size: 1.2em;
+ 
     }
     .ex_nav ul{
         justify-content: space-between;
