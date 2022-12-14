@@ -34,7 +34,7 @@ body, header, main, footer{
 }
 body{
     color: var(--lightgrey);
-    margin: 0;
+
     grid-template-areas:
     'header'
     'main'
@@ -47,6 +47,7 @@ header{
 }
 main{
     grid-area: main;
+    min-height: 100vh;
 }
 footer{
     grid-area: footer;
@@ -103,33 +104,67 @@ footer{
     background-color: var(--lightgrey);
     color: var(--richblack)
 }
-
+/* ------------ */
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+}
+.main, .info{
+    margin-left: auto;
+    margin-right: auto ;
 }
 .ex_nav{
     display: flex;
-    background-color: #000086;
+    background-color: var(--bright_yellow_crayola);
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
-    max-width: 1000px;
+    max-width: 1400px;
 }
 .ex_nav ul{
     flex-direction: row;
-    background-color: #e2b123;
 }
-
 .ex_nav li{
     text-align: center;
-    background-color: aliceblue;
+    background-color: var(--richblack);
     padding: 5px;
+    margin: 10px;
+}
+.page_title{
+    display: flex;
+}
+.page_title_text{
+    align-self: center;
+    position: absolute;
+    left: 40%;
+    word-spacing: .5vw;
+}
+.img_bg{
+    position: relative;
+    z-index: -1;
+}
+.img_bg_space{
+    width: 100vw;
+    max-width: 1800px;
+    opacity: 0.4;
+}
+.ex_main{
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tile{
+    width: 400px;
+    margin: 10px;
 }
 
-
 @media (min-width:700px){
+
     .nav_main{
         display: flex;
         flex-direction: row;
@@ -217,7 +252,11 @@ footer{
 .info{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px 10px 10px 10px;
+    max-width: 1400px;
 }
 .info_details{
     display: flex;
@@ -229,9 +268,7 @@ footer{
 
 /* ------------------ Mobile ------------------ */
 @media ( max-width: 700px){
-    .hide_content{
-        display: none;
-    }
+
     .menu_btn{
         display: flex;
         transition: 0.5s;
@@ -287,6 +324,16 @@ footer{
     .name-3{
         grid-area: name-3;
     }
+    .ex_nav{
+        flex-flow: wrap;
+        font-size: 1.2em;
+    }
+    .ex_nav ul{
+        justify-content: space-between;
+    }
+    .ex_nav li{
+        margin: 5px;
+    }
     @media(min-width:676px){
         .name_container{
             font-size: 1.9em;
@@ -296,9 +343,11 @@ footer{
         }
     }
     .main{
+        margin-top:-150px;
         flex-direction: column;
         align-items: center;
     }
+
     .nav_main{
         padding-top: 100px;
         padding-left: 0;
