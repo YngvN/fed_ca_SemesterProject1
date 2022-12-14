@@ -45,6 +45,7 @@ body{
 header{
     grid-area: header;
     min-height: 70px;
+    z-index: 2;
 }
 main{
     grid-area: main;
