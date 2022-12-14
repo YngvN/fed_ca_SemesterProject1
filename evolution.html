@@ -19,33 +19,22 @@
         </label>
         <div class="header">
             <div class="name_container">
-                <p class="name-1">
+                <h1 class="name-1">
                     Community 
-                </p>
-                <p class="name-2">
+                </h1>
+                <h1 class="name-2">
                     Science 
-                </p>
-                <p class="name-3">
+                </h1>
+                <h1 class="name-3">
                     Museum
-                </p>
+                </h1>
             </div>
             <!-- Top navigation -->    
             <nav>
                     <ul class="nav_main">
-                        <div class="dropdown">
-                            <li><a href="index.html"><button class="dropdown_hover"><div class="arrow"><i class="fa-solid fa-angle-down"></i></div>Exhibitions</button></a></li>
-                            <div class="hide_content">          
-                                <ul class="dropdown_contents">
-                                    <li><a href="index.html" class="menu_item-5"><img src="assets/icon_planet.png" class="dropdown_icon" alt="Cosmology">Cosmology</a></li>
-                                    <li><a href="#"><img src="assets/icon_evolution_sm.png" class="dropdown_icon" alt="Evolution">Evolution</a></li>
-                                    <li><a href="#"><img src="assets/icon_biology.png" class="dropdown_icon" alt="Biology and Medicine">Biology</a></li>
-                                    <li><a href="#"><img src="assets/icon_robotics.png" class="dropdown_icon" alt="Robotics and AI">Robotics</a></li>
-                                    <li><a href="#"><img src="assets/icon_ecology.png" class="dropdown_icon" alt="Ecology">Ecology</a></li>                                        
-                                </ul>
-                            </div>        
-                        </div>
-                        <li><a href="#" class="menu_item-3 nav_height">Events</a></li>
-                        <li><a href="#" class="menu_item-4 nav_height">Visit</a></li>
+                        <li><a href="index.html" class="active"><button class="dropdown_hover active"></i>Exhibitions</button></li>  
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Visit</a></li>
                     <!-- Dropdown menu -->  
                         <div class="dropdown">
                             <li class="hide_content"><button class="dropdown_hover"><div class="arrow"><i class="fa-solid fa-angle-down"></i></div></i>More</button></li>                  
@@ -59,21 +48,40 @@
             </nav>
         </div>
     </header>
+    <!-- Main section -->
     <main>
         <div class="main">
-            <img src="assets/img_logo@2x.png" class="logo" alt="Community Science Museum logo">
-            <h1>
-                This is h1
-            </h1>
-            <h2>
-                This is h2
-            </h2>
-            <h3>
-                This is h3
-            </h3>
-            <p>
-                Paragraf
-            </p>
+            <!-- <img src="assets/img_logo@2x.png" class="logo" alt="Community Science Museum logo"> -->
+            <h1>Exhibitions</h1>
+            <nav>
+                <ul class="ex_nav color_evolution">
+                    <li><a href="index.html">Cosmology</a></li>
+                    <li><a href="#" class="active">Evolution</a></li>
+                    <li><a href="#">Biology</a></li>
+                    <li><a href="#">Robotics</a></li>
+                    <li><a href="#">Ecology</a></li>                                        
+            </nav>
+            <div class="page_title">
+                <img src="assets/icon_evolution_sm.png" alt="Space" class="img_bg img_bg_evolution">      
+                <h3 class="page_title_text">
+                    Where do we come from and how did we get here?
+                </h3>
+            </div>
+
+            <div class="ex_main">
+                <div class="tile">
+                    <img src="assets/img_space-1.png" class="img_tile"> 
+                    <p>Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world. </p>
+                </div>
+                <div class="tile">
+                    <img src="assets/img_space-2.png" class="img_tile"> 
+                    <p>Discover the origins of life on this planet and how the species we know today have evolved our time.</p>
+                </div>
+                <div class="tile">
+                    <img src="assets/img_space-3.png" class="img_tile"> 
+                    <p>You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
