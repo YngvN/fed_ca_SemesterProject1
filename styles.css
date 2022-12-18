@@ -181,6 +181,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 2em;
 }
 .img_tile{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
@@ -359,13 +360,13 @@ body{
     background-color: var(--navyblue);
 }
 
-.main_ex{
+.main_ex, .main_about{
     display: flex;
     flex-direction: row;
     max-width: 1400px;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
+
 .ex_nav{
     display: flex;
     background-color: var(--bright_yellow_crayola);
@@ -378,7 +379,7 @@ body{
 .ex_nav li{
     text-align: center;
     background-color: var(--richblack);
-    padding:  .2em;
+    padding: .2em;
     margin: .2em;
 }
 
@@ -416,9 +417,16 @@ body{
     width: 19em;
     height: 15em;
 }
-.img_bg_evolution{
-    filter: invert(100%);
-    margin-left: -100px;
+
+
+
+.main_about{
+    justify-content: space-around;
+}
+
+.main_involved{
+    justify-content: center;
+    padding: 1em;
 }
 
 
