@@ -9,9 +9,12 @@
     --lightgrey:#d5d5d5;
     --honeydew:#dfece3;
 }
+html {
+    font-size: calc(15px + 0.390625vw);
+}
 a, .btn_style-1{
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
     padding:0.5em;
     cursor: pointer;
 }
@@ -19,16 +22,39 @@ a, .btn_style-1{
     border: none;
     background-color: transparent;
 }
+.btn_style-2{
+    border: var(--lightgrey);
+    background-color: var(--richblack);
+    border-style: solid;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    margin: .5em;
+}
 .btn_style-3{
     background-color: var(--bright_yellow_crayola);
-    width: fit-content;
+    display: flex;
     align-self: center;
-    margin: 3em;
-    padding: 0;
+    width: fit-content;
+    position: relative;
+    margin: 1em;
+    align-content: center;
 }
 
 ul{
     list-style: none;
+}
+h1 {
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+p{
+    font-size: .7rem;
 }
 h1,h2,h3,a, .btn_style-1, .ex_nav{
     color: var(--lightgrey);
@@ -42,16 +68,9 @@ p{
     display: none;
 }
     /*-------   Layout  ------ */
-
 body{
     background-color: var(--richblack);
-    max-width: 1400px;
-
 }
-header{
-    z-index: 2;
-}
-
     /*-------   General Content  ------ */
 .header{
     display: flex;
@@ -59,6 +78,12 @@ header{
 }
 .container{
     padding: 0em 1em;
+}
+.title{
+    background-color: var(--richblack);
+    width: max-content;
+    align-self: center;
+    padding: 0 1em;
 }
 /* Museum name */
 .name_container{
@@ -77,6 +102,7 @@ header{
 .right nav{
     position: fixed;
     right: 0;
+    z-index: 2;
 }
 .nav_top ul{
     display: flex;
@@ -86,7 +112,6 @@ header{
     padding: 0;
     z-index: 2;
 }
-
 .more_content li{
     padding:.5em 0;
     width: 100%;
@@ -114,16 +139,11 @@ header{
     max-height: 100%;
     overflow: visible;
 }
-
-
 /* Footer items */
 .social{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.social_media{
-    font-size: 2.5rem;
 }
 .info{
     display: flex;
@@ -138,7 +158,6 @@ header{
     text-align: right;
 }
 
-
 /* -------------- */
 
 /* Hover coloring */
@@ -151,6 +170,25 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.img_tile{
+    object-fit:cover;
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
+}
+.tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 30px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.47);
+    justify-content: space-around;
+    text-align: center;
 }
 
 /* ------------------ Mobile ------------------ */
@@ -237,6 +275,11 @@ header{
 /* Home page */
 .main_index{
     background-image: url(assets/img_bg_home.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg_fixed{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -244,37 +287,12 @@ header{
     min-height: 100vh;
 }
 
-.img_event{
-    max-height: 20%;
-    right: 0;
-}
-.btn_style-2{
-    border: var(--lightgrey);
-    background-color: var(--richblack);
-    font-size: 1.2vw;
-    border-style: solid;
-    text-align: left;
-    cursor: pointer;
-    width: 100%;
-    margin: .5em;
-}
-@media ( min-width: 80em){
-    .btn_style-2{
-        font-size: 1em;
-    }
-}
-@media ( max-width: 40em){
-    .btn_style-2{
-        font-size: 1rem;
-    }
-}
 
-.event_title-1, .event_title-2, .event_title-3{
-    min-width: ;
-}
+
+
 .event_info{
-    width: 30%;
-    min-width: max-content;
+    max-width: 400px;
+    width: 30vw;
 }
 .events{
     background-color: rgba(0, 0, 0, 0.685);
@@ -283,33 +301,34 @@ header{
     display: inline-block;
     position: relative;
 }
+.event_text{
+    width: 25vw;
+}
 .event_tile{
     display: flex;
-    flex-direction: row;
-}
-.event-1, .event-2, .event-3{
-    display: flex;
-    flex-direction: row;
-}
-.event_info-1, .event_info-2, .event_info-3{
-    display: flex;
     visibility: hidden;
-    width: 40%;
     position: absolute;
     flex-direction: row;
-    right: 15%;
-    background-color: var(--richblack);
-    top: 10%;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 50vw;
+    height: fit-content;
+    max-width: 700px;
+    top: 5%;
+    right: 5%;
     justify-content: space-between;
+}
+.img_event{
+    width: 20vw;
+    height: 25vw;
+}
+.event-1, .event-2, .event-3{
 
 }
 .event-1:hover  .event_info-1{
     transition: 0.5s;
     visibility: visible;
 }
-.event-1:hover .event{
-    filter: invert(100%);
-}
+
 .event-2:hover  .event_info-2{
     visibility: visible;
 }
@@ -317,10 +336,38 @@ header{
     visibility: visible;
 }
 
+.event_info-1, .event_info-2, .event_info-3{
+
+}
+@media ( max-width: 40em){
+    .event_tile{
+        position: relative;
+        visibility: visible;
+        right: auto;
+        top: auto;
+        width: 80vw;
+    }
+    .img_event{
+        width: 30vw;
+        height: 40vw;
+    }
+    .event_text{
+        width: 40vw;
+        
+    }
+
+    .event_title{
+        display: none;
+    }
+
+}
+
 
 
 
 /* Exhibitions */
+
+
 .ex_nav{
     display: flex;
     background-color: var(--bright_yellow_crayola);
@@ -376,21 +423,4 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.tile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 30px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.47);
-    justify-content: space-around;
-    text-align: center;
-}
-.img_tile{
-    object-fit:cover;
-    width: 280px;
-    height: 150px;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
-}
+
