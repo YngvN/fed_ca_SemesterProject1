@@ -213,7 +213,7 @@ body{
         filter: invert(70%);
     }
     .menu_toggle:checked ~ .header{
-        min-height: 100%;
+        min-height: 120%;
     }
     .header{
         display: flex;
