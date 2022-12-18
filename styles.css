@@ -39,6 +39,15 @@ a, .btn_style-1{
     position: relative;
     margin: 1em;
     align-content: center;
+    background-color: var(--lightgrey);
+    border-radius: 5px;
+    border-style: outset;
+
+}
+.btn_style-3 a{
+    color: var(--richblack);
+    padding: 0;
+    margin: 0;
 }
 
 ul{
@@ -71,7 +80,7 @@ p{
 body{
     background-color: var(--richblack);
 }
-    /*-------   General Content  ------ */
+/*-------   General Content  ------ */
 .header{
     display: flex;
     flex-direction: row;
@@ -84,6 +93,12 @@ body{
     width: max-content;
     align-self: center;
     padding: 0 1em;
+}
+.bg_fixed{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* Museum name */
 .name_container{
@@ -158,37 +173,21 @@ body{
     text-align: right;
 }
 
-/* -------------- */
-
 /* Hover coloring */
 .nav_top a:first-child:hover{
     background-color: purple;
 }
-
-/* ------------ */
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .img_tile{
-    object-fit:cover;
-    width: 20em;
-    height: 20em;
-    margin: 1em;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
 }
 .tile{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 30px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.47);
-    justify-content: space-around;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 /* ------------------ Mobile ------------------ */
@@ -279,16 +278,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.bg_fixed{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-}
-
-
-
 
 .event_info{
     max-width: 400px;
@@ -314,12 +303,14 @@ body{
     height: fit-content;
     max-width: 700px;
     top: 5%;
-    right: 5%;
+    right: 2%;
     justify-content: space-between;
 }
 .img_event{
-    width: 20vw;
-    height: 25vw;
+    width: 15vw;
+    height: 20vw;
+    object-fit:cover;
+    margin: 1em;
 }
 .event-1, .event-2, .event-3{
 
@@ -336,9 +327,6 @@ body{
     visibility: visible;
 }
 
-.event_info-1, .event_info-2, .event_info-3{
-
-}
 @media ( max-width: 40em){
     .event_tile{
         position: relative;
@@ -367,16 +355,22 @@ body{
 
 /* Exhibitions */
 
+.color_evolution{
+    background-color: var(--navyblue);
+}
 
+.main_ex{
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .ex_nav{
     display: flex;
     background-color: var(--bright_yellow_crayola);
     justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    max-width: 1800px;
-    font-size: 1.3em;
+    flex-wrap: wrap;
 }
 .ex_nav ul{
     flex-direction: row;
@@ -384,43 +378,47 @@ body{
 .ex_nav li{
     text-align: center;
     background-color: var(--richblack);
-    padding: 5px;
-    margin: 10px;
+    padding:  .2em;
+    margin: .2em;
 }
-.color_evolution{
-    background-color: var(--navyblue);
-}
-.page_title{
+
+.under-title{
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    width: 100%;
-    height: 200px;
-    margin: 20px;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-.page_title_text{
-    align-self: center;
-    position: absolute;
-    left: 50%;
-    text-align: center;
+.under-title-cosmology{
+    background-position: -10px -50px;
+    background-image: url(assets/img_bg_space.png);
 }
-.img_bg{
+
+.img_under-title{
     position: relative;
-    z-index: -1;
-    object-fit: scale-down;
-    width: 100vw;
+    filter: invert(100%);
+    max-height: 10vh;
 }
-.img_bg_space{
-    max-width: 1400px;
-    opacity: 0.4;
+
+.ex_tile{
+    width: 15em;
+    height: fit-content;
+    max-width: ;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.494);
+    margin: 2em;
+}
+.img_tile_ex{
+    object-fit: cover;
+    align-self: center;
+    width: 19em;
+    height: 15em;
 }
 .img_bg_evolution{
     filter: invert(100%);
     margin-left: -100px;
 }
-.ex_main{
-    display: flex;
-    flex-direction: row;
-    max-width: 1400px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 

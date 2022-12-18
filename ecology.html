@@ -17,81 +17,74 @@
                 <i class="fa-solid fa-bars"></i>                    
             </div>
         </label>
-        <div class="header">
-            <div class="name_container">
-                <h1 class="name-1">
-                    Community 
-                </h1>
-                <h1 class="name-2">
-                    Science 
-                </h1>
-                <h1 class="name-3">
-                    Museum
-                </h1>
-            </div>
+        <div class="container header">
+            <h1 class="name_container">Community<div class="variable_font">Science</div>Museum</h1>
+        <div class="right">    
+            <!-- Top navigation -->          
             <nav>
-                <ul class="nav_main">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active"></i>Exhibitions</li>  
-                    <li><a href="visit.html">Visit</a></li>
+                <div class="container nav_top">
+                    <ul>                  
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="active">Exhibits</a></li>  
+                        <li><a href="visit.html">Visit</a></li>
                     <!-- Dropdown menu -->  
-                    <div class="dropdown">
-                        <li class="hide_content"><button class="dropdown_hover"><div class="arrow"><i class="fa-solid fa-angle-down"></i></div></i>More</button></li>                  
-                        <ul class="dropdown_contents">
-                            <li><a href="involved.html">Get Involved</a></li>  
-                            <li><a href="about.html">About</a></li>
-                        </ul>
-                    </div>
-                </ul>
+                        <div class="dropdown">
+                            <div class="hide_content">
+                            <li><button class="btn_style-1"><div class="arrow"><i class="fa-solid fa-angle-down"></i></div></i>More</button></li>
+                            </div>
+                            <div class="more_content">             
+                                <li><a href="involved.html">Get Involved</a></li>  
+                                <li><a href="about.html">About</a></li>
+                            </div>
+                        </div> 
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
     <!-- Main section -->
+
     <main>
-        <div class="main">
+        <div class="main main_exhibits">
             <!-- <img src="assets/img_logo@2x.png" class="logo" alt="Community Science Museum logo"> -->
-            <h1>Exhibitions</h1>
+            <div class="title">
+                <h2>Exhibits</h2>
+            </div>            
             <nav>
-                <ul class="ex_nav color_ecology">
-                    <li><a href="cosmology.html">Cosmology<img src="assets/icon_ecology.png" class="dropdown_icon" alt="Ecology"></a></li>
+                <ul class="ex_nav color_robotics">
+                    <li><a href="cosmology.html">Cosmology</a></li>
                     <li><a href="evolution.html">Evolution</a></li>
                     <li><a href="biology.html">Biology</a></li>
                     <li><a href="robotics.html">Robotics</a></li>
-                    <li><a href="#" class="active">Ecology</a></li>                                        
+                    <li><a href="#" class="active">Ecology</a></li>                                          
             </nav>
-            <div class="page_title">
-                <!-- <img src="assets/icon_evolution_sm.png" alt="Space" class="img_bg img_bg_evolution">       -->
-                <h3 class="page_title_text">
+            <div class="under-title under-title-ecology">               
+                <img src="assets/icon_ecology.png" class="img_under-title" alt="Ecology icon">   
+                <h3>
                     As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.
                 </h3>
             </div>
 
-            <div class="ex_main">
-                <div class="tile">
-                    <img src="assets/img_tile_ecology-3.png" class="img_tile"> 
+            <div class="main main_ex">
+                <div class="container tile ex_tile">
+                    <img src="assets/img_tile_ecology-3.png" class="img_tile img_tile_ex"> 
                     <p>Insert text here</p>
                 </div>
-                <div class="tile">
-                    <img src="assets/img_tile_ecology-1.png" class="img_tile"> 
+                <div class="container tile ex_tile">
+                    <img src="assets/img_tile_ecology-1.png" class="img_tile img_tile_ex"> 
                     <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution.</p>
                 </div>
-                <div class="tile">
-                    <img src="assets/img_tile_ecology-2.png" class="img_tile"> 
+                <div class="container tile ex_tile">
+                    <img src="assets/img_tile_ecology-2.png" class="img_tile img_tile_ex"> 
                     <p>We also focus on the positive ways we can all contribute to a brighter future.</p>
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer">
-            <div class="social">
-                <p>Follow Us:</p>
-                <div class="social_media">
-                    <a href="#" alt="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="#" alt="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-            </div>
-            <div class="info">
+            <div class="container info">
                 <div class="info_details">
                     <h3>
                         Contact
@@ -101,6 +94,13 @@
                         <i class="fa-solid fa-phone"></i> +99 555 123<br>
                         <i class="fa-solid fa-envelope"></i> contact@csm.com
                     </p>
+                </div>
+                <div class="container social">
+                    <h3>Follow Us:</h3>
+                    <div class="social_media">
+                        <a href="#" alt="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" alt="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
                 </div>
                 <div class="hours_open">
                     <h3>
